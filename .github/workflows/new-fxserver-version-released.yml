@@ -30,7 +30,7 @@ jobs:
         with:
           fetch-depth: 0
           ssh-key: "${{ secrets.COMMIT_KEY }}"
-      - uses: mukunku/tag-exists-action@v1.2.0
+      - uses: mukunku/tag-exists-action@v1.6.0
         id: checkTag
         with:
           tag: ${{ github.event.inputs.latest }}
